@@ -1466,7 +1466,9 @@ namespace Npgsql
                 while (count > 0)
                 {
                     var toRead = Size - _filledBytes;
-                    var read = Underlying.Read(_buf, _filledBytes, toRead);
+                    //if i chnage this call to sync all work fine
+                    //var read = Underlying.Read(_buf, _filledBytes, toRead);
+                    var read = await (Underlying.ReadAsync(_buf, _filledBytes, toRead, cancellationToken));
                     if (read == 0)
                         throw new EndOfStreamException();
                     count -= read;
@@ -1658,7 +1660,9 @@ namespace Npgsql
             {
                 try
                 {
-                    Underlying.Write(_buf, 0, _writePosition);
+                    //Underlying.Write(_buf, 0, _writePosition);
+                    //if i chnage this call to sync all work fine
+                    await Underlying.WriteAsync(_buf, 0, _writePosition, cancellationToken);
                 }
                 catch (Exception e)
                 {
