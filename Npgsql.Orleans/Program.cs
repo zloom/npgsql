@@ -69,6 +69,7 @@ namespace Npgsql.Orleans
             Console.WriteLine("!!!");
             Console.ReadKey();
 
+            //Execute CreateOrleansTables_Postgres.sql to create orleans tables
             //when relational storage used outside silo all work fine.
             //var rs = RelationalStorage.CreateInstance("Npgsql", connectionString);
             //var result = rs.ReadAsync("SELECT QueryKey, QueryText FROM OrleansQuery;", GetQueryKeyAndValue, null).Result;
@@ -77,7 +78,7 @@ namespace Npgsql.Orleans
             //orleans silo use custom task manager and thread pool it maybe source of problem
             //npgsql 2.2.7 version also work fine 
 
-            
+
             Init(args);
 
             Console.ReadKey();
