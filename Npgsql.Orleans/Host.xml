@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OrleansConfiguration xmlns="urn:orleans">
+  <Globals>
+    <SystemStore SystemStoreType="SqlServer" DeploymentId="TestId" AdoInvariant="Npgsql" DataConnectionString="Server=localhost;Port=5432;Database=orleans_system;User Id=postgres;Password = 123; CommandTimeout = 20; Pooling = true;"/>
+    <StorageProviders><Provider Type="Orleans.Storage.MemoryStorage" Name="PubSubStore" /></StorageProviders>
+    <Liveness LivenessType ="SqlServer" />
+  </Globals>
+  <Defaults>
+    <Networking Address="localhost" Port="11111" />
+    <ProxyingGateway Address="localhost" Port="30000" />
+    <Tracing DefaultTraceLevel="Info" TraceToConsole="true" TraceToFile="log.txt"/>
+  </Defaults>
+</OrleansConfiguration>

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Npgsql.Tests", "test\Npgsql
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "GACInstaller", "src\GACInstaller\GACInstaller.wixproj", "{3E9D78D3-C5D4-40E3-9FDD-AC91E19618AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Npgsql.Orleans", "Npgsql.Orleans\Npgsql.Orleans.csproj", "{AA1F26E7-87E2-4479-AA92-5331E75964F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,14 @@ Global
 		{3E9D78D3-C5D4-40E3-9FDD-AC91E19618AB}.Release|Any CPU.ActiveCfg = Release|x86
 		{3E9D78D3-C5D4-40E3-9FDD-AC91E19618AB}.Release|x86.ActiveCfg = Release|x86
 		{3E9D78D3-C5D4-40E3-9FDD-AC91E19618AB}.Release|x86.Build.0 = Release|x86
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{AA1F26E7-87E2-4479-AA92-5331E75964F1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +67,9 @@ Global
 		{9D13B739-62B1-4190-B386-7A9547304EB3} = {8537E50E-CF7F-49CB-B4EF-3E2A1B11F050}
 		{E9C258D7-0D8E-4E6A-9857-5C6438591755} = {ED612DB1-AB32-4603-95E7-891BACA71C39}
 		{3E9D78D3-C5D4-40E3-9FDD-AC91E19618AB} = {8537E50E-CF7F-49CB-B4EF-3E2A1B11F050}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Npgsql.csproj
