@@ -62,8 +62,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="OrleansSQLUtils, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>.\OrleansSQLUtils.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Orleans.OrleansSqlUtils.1.2.1\lib\net451\OrleansSQLUtils.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,7 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="CreateOrleansTables_Postgres.sql" />
